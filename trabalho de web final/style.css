@@ -1,0 +1,575 @@
+/* Estilos Gerais - Comuns a todas as páginas */
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: #bbb;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f5f5f5;
+}
+
+/* Título de Seção */
+.section-title {
+    color: #f5f5f5;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Botões */
+.btn-outline-light {
+    border: 1px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: 0.3s;
+}
+.btn-outline-light:hover {
+    background-color: #f5f5f5;
+    color: #111;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #f5f5f5;
+}
+
+/* Responsividade Geral */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/* Estilos Específicos para a Página do Index */
+
+/* Banner de Destaque */
+.banner {
+    position: relative;
+    background-image: url("img/foto1.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px; /* Ajuste para garantir espaçamento em telas pequenas */
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Música */
+.music-item {
+    background-color: #333;  /* Cor de fundo escura para cada item */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra suave para destacar */
+    transition: transform 0.3s ease-in-out;
+}
+
+.music-item:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Cartaz do Evento - Ajuste da imagem */
+#evento-destaque .col-md-6 img {
+    object-fit: contain; /* Ajusta a imagem sem cortar, garantindo que toda a imagem apareça */
+    width: 100%; /* A largura da imagem será 100% do contêiner */
+    height: 100%; /* A altura da imagem será 100% do contêiner */
+    max-height: 400px; /* Altura máxima para evitar que a imagem fique muito grande */
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+
+    .music-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos Específicos para a Página de Eventos */
+
+.event-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.event-item img {
+    width: 150px; /* Tamanho fixo em telas grandes */
+    height: 150px; /* Altura consistente */
+    border-radius: 8px;
+    object-fit: cover; /* Preenche o espaço sem distorcer */
+    margin-right: 20px;
+    display: block;
+}
+
+.event-info {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 10px;
+}
+
+.event-item h5 {
+    color: #f5f5f5;
+    font-size: 18px; /* Tamanho adaptável */
+}
+
+.event-item p {
+    color: #bbb;
+    font-size: 14px; /* Texto menor para melhor responsividade */
+}
+
+.event-info a {
+    font-size: 12px; /* Botão menor */
+    padding: 5px 10px;
+}
+
+/* Estilo para o mapa */
+.map-container iframe {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Estilos Específicos para a Página de Eventos */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+.event-item {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%; /* Garante que o contêiner não ultrapasse a largura da tela */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.event-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+    flex-shrink: 0;
+    max-width: 100%; /* Garante que imagens respeitem a largura do contêiner */
+}
+
+.event-info {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+    max-width: 100%; /* Evita que textos ultrapassem a largura do contêiner */
+    box-sizing: border-box;
+}
+
+.event-item h5 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.event-item p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.event-info a {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Estilos Específicos para a Página de Eventos */
+
+
+@media (max-width: 768px) {
+    .event-item {
+         flex-direction: column;
+         align-items: center;
+    }
+
+.event-info {
+    text-align: center;
+    }
+}
+
+/* Estilos Específicos para a Página de Fotos e Vídeos */
+
+/* Corpo da página de Fotos e Vídeos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column; /* Usar flexbox para o layout da página */
+    min-height: 100vh; /* Garantir que o corpo ocupe a altura da tela */
+    margin: 0;
+}
+
+/* Container principal que envolve todo o conteúdo */
+main {
+    flex: 1; /* Faz o conteúdo principal preencher o espaço disponível */
+}
+
+/* Galeria de Mídias */
+.gallery-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item img, .gallery-item video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Comentários */
+.comments-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    margin-top: 5px;
+    height: 60px;
+    overflow-y: auto;
+}
+
+.comment p {
+    margin: 0;
+    padding: 2px 0;
+}
+
+/* Formulário de Comentários */
+.comment-form {
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.comment-form textarea {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    padding: 3px;
+    font-size: 0.75rem;
+    height: 30px;
+}
+
+.comment-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 3px 12px;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé específico para a página de Fotos e Vídeos */
+footer {
+    position: relative;  /* Modificado para ajustar a posição do rodapé */
+    background-color: #222;
+    color: #bbb;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+    bottom: 0;
+    margin-top: auto; /* Faz com que o rodapé vá para o fundo da página */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gallery-item img, .gallery-item video {
+        height: auto;
+        max-height: 200px; /* Ajuste para as mídias em telas pequenas */
+    }
+    .comment-form textarea {
+        width: 100%; /* Garante que o campo de comentário ocupe toda a largura da tela */
+    }
+}
+
+/* Estilos Específicos para a Página Merch */
+
+/* Container de Merch */
+.merch-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Item do Merch */
+.merch-item {
+    background-color: #222;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 10px;
+    height: 480px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem do Item */
+.merch-item img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #333;
+}
+
+/* Nome do Item */
+.merch-item h5 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Preço do Item */
+.merch-item p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Botão Adicionar ao Carrinho */
+.merch-item button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.merch-item button:hover {
+    background-color: #e64a19;
+}
+
+/* Modal (Confirmação de Adição ao Carrinho) */
+.modal-content {
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .merch-item {
+        width: 100%;
+        max-width: 100%;
+    }
+    .merch-item img {
+        max-height: 180px;
+    }
+}
+
+/* Carrinho */
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    font-size: 1.2rem;
+}
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+.clear-cart-btn {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 200px;
+}
+
+.clear-cart-btn:hover {
+    background-color: #e64a19;
+}
+
+.quantity-controls button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Pagamentos */
+
+/* Aplica o estilo apenas à página de pagamento */
+
+.form-label {
+    color: #ccc;
+}
+
+.form-control,
+.form-select {
+    background-color: #222;
+    border: 1px solid #444;
+    color: #f5f5f5;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px; /* Adiciona espaçamento inferior entre os botões e o rodapé */
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #e53935;
+    transform: translateY(-2px);
+}
