@@ -7,14 +7,14 @@
     <title>Contatos - Broken Time Machine</title>
 
     <!-- Links para os estilos do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Inclusão da Navbar e footer -->
-    <?php include 'navbar.php'; ?>
+    <!-- Inclusão da Navbar -->
+    <?php include 'navbar.php' ?>
 
     <!-- Seção principal de contacto -->
     <div class="container mt-5">
@@ -22,7 +22,8 @@
 
         <?php
         // Conexão com a base de dados
-        require_once 'connection.php';
+        include 'connection/connection.php';
+
 
         // Verifica se o formulário foi submetido
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -73,9 +74,9 @@
     </div>
 
     <?php include 'footer.php'; ?>
-<!-- Scripts do Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="navbar.js"></script>
+    
+
+   
 </body>
 
 </html>

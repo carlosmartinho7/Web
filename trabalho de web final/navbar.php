@@ -20,4 +20,4 @@
     </div>
 </nav>
 
-<script src="navbar.js" type="module"></script>
+<script src="js/navbar.js" type="module"></script>

@@ -6,7 +6,7 @@
     <title>Merch - Broken Time Machine</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -59,7 +59,7 @@
 
     <script>
         // ---------------- Adicionar ao Carrinho -------------------
-        let productToAdd = null; // Variável para armazenar o item que será adicionado
+        let productToAdd = null; // Variável para armazenar o produto que será adicionado
 
         document.querySelectorAll('.add-to-cart').forEach(button => {
             button.addEventListener('click', () => {
