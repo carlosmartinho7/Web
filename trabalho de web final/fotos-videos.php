@@ -53,7 +53,6 @@ $media = [
                     <?php else: ?>
                         <video controls>
                             <source src="<?= $item['src']; ?>" type="video/mp4">
-                            Seu navegador não suporta o elemento de vídeo.
                         </video>
                     <?php endif; ?>
 
@@ -85,6 +84,8 @@ $media = [
         </div>
     </section>
     <?php include 'footer.php'; ?>
+    <!-- Bootstrap Bundle JS (inclui Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

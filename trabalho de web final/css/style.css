@@ -67,6 +67,7 @@ a:hover {
 }
 
 /* Estilos Específicos para a Página do Index */
+
 /* Banner de Destaque */
 .banner {
     position: relative;
@@ -79,8 +80,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-} 
-  
+}
 
 .banner-overlay {
     position: absolute;
